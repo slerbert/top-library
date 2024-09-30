@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+dialog input {
+    margin-bottom: .5rem;
+    padding: .2rem;
+}
+
+dialog {
+    margin: auto;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: .3em 1em;
+    margin: .5rem .2rem;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem;
+}
+
+.card {
+    flex-basis: 15em;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1rem 0;
+}
+
+.card img {
+    width: 20px;
+    height: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.card-footer button {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+    color: #fff;
+    background-color: #d9534f;
+    transition: background-color 0.5s ease;
+    font-weight: 700;
+    font-size: 1.1rem;
+    overflow: inherit;
+    margin: 0;
+}
+
+.card-footer button::after {
+    content: url(./switch-horizontal-svgrepo-com.svg);
+    zoom: 3%;
+}
+.card-footer button:hover {
+    background-color: #c94b47;
+}
+
+.card-footer .toggle-read {
+    background-color: #5cb85c;
+}
+
+.card-footer .toggle-read:hover {
+    background-color: #50a850;
+
+}
